@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171720"/>
+      <stop offset="50%" stop-color="#111118"/>
+      <stop offset="100%" stop-color="#09090D"/>
+    </linearGradient>
+
+    <!-- Purple Neon Accent Gradient -->
+    <linearGradient id="purpleNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4B5FD"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <!-- Text Highlight Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#8B5CF6" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Container: Dark rounded terminal base -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bgGrad)" stroke="#8B5CF6" stroke-width="2.5" filter="url(#glow)"/>
+
+  <!-- Subtle Top Window Bar line -->
+  <line x1="8" y1="16" x2="56" y2="16" stroke="#292536" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Window status dots -->
+  <circle cx="13" cy="10" r="2" fill="#EF4444" opacity="0.85"/>
+  <circle cx="19" cy="10" r="2" fill="#F59E0B" opacity="0.85"/>
+  <circle cx="25" cy="10" r="2" fill="#22C55E" opacity="0.85"/>
+
+  <!-- Terminal Title Prompt label -->
+  <text x="33" y="12" fill="#A1A1AA" font-family="'JetBrains Mono', monospace" font-size="6" font-weight="600" letter-spacing="0.5">UTSO</text>
+
+  <!-- Developer Prompt: '>' -->
+  <path d="M13 27 L23 35 L13 43" fill="none" stroke="url(#purpleNeon)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- UTSO Monogram: 'U' -->
+  <path d="M29 27 V38 C29 44.5 33 47 38.5 47 C44 47 48 44.5 48 38 V27" fill="none" stroke="url(#textGrad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Blinking Terminal Underscore Cursor in Success Green -->
+  <rect x="51" y="44" width="6" height="3" rx="0.75" fill="#22C55E"/>
+</svg>
+
