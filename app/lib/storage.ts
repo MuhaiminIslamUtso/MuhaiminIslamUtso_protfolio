@@ -54,6 +54,12 @@ export function storageRemove(name: string): void {
 // ─────────────────────────────────────────────────
 
 export const GameStorage = {
+  // Dino Runner
+  getDinoHighScore: (): number =>
+    storageGet<number>("dino-highscore", 0),
+  setDinoHighScore: (score: number): void =>
+    storageSet("dino-highscore", score),
+
   // Snake
   getSnakeHighScore: (difficulty: string): number =>
     storageGet<number>(`snake-highscore-${difficulty}`, 0),

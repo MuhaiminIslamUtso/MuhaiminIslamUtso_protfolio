@@ -3,28 +3,36 @@ import { ArrowRight, Gamepad2 } from "lucide-react";
 
 const games = [
   {
-    id: "adventure",
-    title: "Platform Adventure",
+    id: "dino",
+    title: "Chrome Dino Runner",
     description:
-      "A 2D side-scrolling platformer with 3 levels. Jump across platforms, collect items, and defeat enemies on your way to victory.",
-    emoji: "🏃",
-    color: "text-[#22C55E]",
+      "The classic T-Rex runner. Jump over cyber obstacles, duck under flying drones, and beat your distance high score.",
+    emoji: "🦖",
+    color: "text-[#8B5CF6]",
   },
   {
     id: "snake",
-    title: "Snake",
+    title: "Snake Classic",
     description:
-      "The classic Snake game with multiple difficulty levels. Eat food, grow longer, and avoid hitting walls or yourself.",
+      "The retro arcade Snake game with selectable speeds. Eat food, grow longer, and avoid colliding with boundaries or yourself.",
     emoji: "🐍",
-    color: "text-[#A78BFA]",
+    color: "text-[#22C55E]",
   },
   {
     id: "memory",
     title: "Memory Match",
     description:
-      "A card-matching memory game featuring technology icons. Flip pairs, use your memory, and beat your best move count.",
+      "A card-matching memory game featuring tech stack icons. Flip pairs, test your recall, and minimize moves.",
     emoji: "🃏",
     color: "text-yellow-400",
+  },
+  {
+    id: "adventure",
+    title: "Platform Adventure",
+    description:
+      "A 2D platformer with 3 levels built with Phaser 3. Jump across platforms, defeat enemies, and collect power-ups.",
+    emoji: "🏃",
+    color: "text-[#A78BFA]",
   },
 ];
 
@@ -42,10 +50,10 @@ export default function ArcadePreview() {
               id="arcade-preview-heading"
               className="text-3xl sm:text-4xl font-bold text-[#F5F3FF]"
             >
-              Take a Break & Play
+              Take a Break &amp; Play
             </h2>
             <p className="text-[#A1A1AA] mt-2">
-              Three fully playable games built into this portfolio.
+              Four fully playable games built directly into this portfolio.
             </p>
           </div>
           <Link
@@ -57,8 +65,8 @@ export default function ArcadePreview() {
           </Link>
         </div>
 
-        {/* Game cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Game cards (4 columns) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {games.map((game) => (
             <article
               key={game.id}
@@ -92,4 +100,3 @@ export default function ArcadePreview() {
     </section>
   );
 }
-

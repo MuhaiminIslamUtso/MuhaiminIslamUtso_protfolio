@@ -13,7 +13,7 @@ export const profile = {
   github: "https://github.com/MuhaiminIslamUtso",
   linkedin: "https://www.linkedin.com/in/muhaiminislamutso/",
   facebook: "https://www.facebook.com/muhaimin.islam.raian",
-  email: "", // Add your email here when ready
+  email: "muhaiminislamutso@gmail.com",
   bio: "I enjoy learning new technologies, building practical software projects, and improving my development skills through hands-on experience.",
   longBio: `I'm Muhaimin Islam Utso, a Computer Science and Engineering student at the American International University-Bangladesh (AIUB). My journey into software development started with a fascination for how technology solves real-world problems.
 

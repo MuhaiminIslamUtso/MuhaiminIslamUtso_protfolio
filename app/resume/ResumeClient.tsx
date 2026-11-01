@@ -38,6 +38,9 @@ export default function ResumeClient() {
     const textToCopy = `Candidate: ${profile.fullName} (${profile.displayName})
 Role: ${profile.identity}
 Institution: ${profile.university} - ${profile.department}
+Academic Status: Active student. Graduation date and CGPA will be updated upon completion.
+Education History: AIUB (B.Sc. in CSE) | HSC (Khulna Model School and College) | SSC (Khulna Zilla School)
+Email: ${profile.email}
 GitHub: ${profile.github}
 LinkedIn: ${profile.linkedin}
 Facebook: ${profile.facebook}
@@ -300,6 +303,11 @@ Core Stack: C#, Windows Forms, Microsoft SQL Server, React, TypeScript, Node.js,
   `}<span className="text-[#A78BFA]">&quot;role&quot;</span>{`: `}<span className="text-emerald-400">&quot;${profile.identity}&quot;</span>{`,
   `}<span className="text-[#A78BFA]">&quot;institution&quot;</span>{`: `}<span className="text-emerald-400">&quot;American International University-Bangladesh (AIUB)&quot;</span>{`,
   `}<span className="text-[#A78BFA]">&quot;department&quot;</span>{`: `}<span className="text-emerald-400">&quot;Computer Science and Engineering (CSE)&quot;</span>{`,
+  `}<span className="text-[#A78BFA]">&quot;educationHistory&quot;</span>{`: [
+    `}<span className="text-emerald-400">&quot;B.Sc. in CSE @ AIUB (Active student - Graduation &amp; CGPA pending completion)&quot;</span>{`,
+    `}<span className="text-emerald-400">&quot;HSC @ Khulna Model School and College (Science)&quot;</span>{`,
+    `}<span className="text-emerald-400">&quot;SSC @ Khulna Zilla School (Science)&quot;</span>{`
+  ],
   `}<span className="text-[#A78BFA]">&quot;github&quot;</span>{`: `}<span className="text-emerald-400">&quot;${profile.github}&quot;</span>{`,
   `}<span className="text-[#A78BFA]">&quot;linkedin&quot;</span>{`: `}<span className="text-emerald-400">&quot;${profile.linkedin}&quot;</span>{`,
   `}<span className="text-[#A78BFA]">&quot;facebook&quot;</span>{`: `}<span className="text-emerald-400">&quot;${profile.facebook}&quot;</span>{`,

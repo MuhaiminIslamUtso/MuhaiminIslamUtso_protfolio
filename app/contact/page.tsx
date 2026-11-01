@@ -174,15 +174,18 @@ export default function ContactPage() {
                   </a>
                 </li>
                 <li>
-                  <div className="flex items-center gap-3 text-sm text-[#A1A1AA] p-2 rounded-lg bg-[#111118]/50">
+                  <a
+                    href={`mailto:${profile.email}`}
+                    className="flex items-center gap-3 text-sm text-[#A1A1AA] hover:text-[#F5F3FF] transition-colors p-2 rounded-lg hover:bg-[#111118]"
+                  >
                     <div className="w-8 h-8 rounded-lg bg-[#8B5CF6]/10 border border-[#8B5CF6]/20 flex items-center justify-center text-[#8B5CF6]">
                       <Mail size={16} />
                     </div>
                     <div>
-                      <p className="text-xs text-[#A1A1AA]">Preferred Contact</p>
-                      <p className="text-xs text-[#F5F3FF]">Email / Contact Form</p>
+                      <p className="text-xs text-[#A1A1AA]">Direct Email</p>
+                      <p className="font-mono text-xs text-[#F5F3FF] break-all">{profile.email}</p>
                     </div>
-                  </div>
+                  </a>
                 </li>
               </ul>
             </div>
